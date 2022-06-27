@@ -17,7 +17,7 @@ h1 {
   text-align: center;
 }
 
-.input-task {
+#task-input {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
@@ -32,9 +32,26 @@ h1 {
   color: #fff;
   background-color: lightskyblue;
   border: 1px solid lightskyblue;
+  text-align: center;
+  padding: 5px;
 }
 
-.tasks {
+#tasks {
   display: flex;
   margin-top: 10px;
+  flex-direction: column;
 }
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* ao clicar no checkbox, risca a task */
+:checked + label {
+  text-decoration: line-through;
+  color: grey;
+}
+
+
